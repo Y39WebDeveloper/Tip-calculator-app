@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main-title"><img src="images/logo.svg" alt=""></div>
+  <div class="container">
+    <div class="info">
+      <div class="bill">
+        <h6 class="title-info">Bill<span>Can't be zero</span></h6>
+        <input type="number" id="bill" placeholder="0" required>
+      </div>
+      <div class="tip">
+        <h6 class="title-info">Select tip %</h6>
+        <div class="inputs">
+          <div><input type="radio" name="tip" id="t5" value="5"><label for="t5">5%</label></div>
+          <div><input type="radio" name="tip" id="t10" value="10"><label for="t10">10%</label></div>
+          <div><input type="radio" name="tip" id="t15" value="15"><label for="t15">15%</label></div>
+          <div><input type="radio" name="tip" id="t25" value="25"><label for="t25">25%</label></div>
+          <div><input type="radio" name="tip" id="t50" value="50"><label for="t50">50%</label></div>
+          <div><input type="number" name="tip" id="tcustom" placeholder="Custom"></div>
+        </div>
+      </div>
+      <div class="people">
+        <h6 class="title-info">Number of People <span>Can't be zero</span></h6>
+        <input type="number" id="people" placeholder="0" required>
+      </div>
+    </div>
+
+    <div class="result">
+      <div class="rows">
+        <div class="row">
+          <h6>Tip Amount <span>/ person</span></h6>
+          <h3>$<span id="tipAmount">0</span></h3>
+        </div>
+        <div class="row">
+          <h6>Total <span>/ person</span></h6>
+          <h3>$<span id="total">0</span></h3>
+        </div>
+      </div>
+      <button type="reset" id="reset">RESET</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
